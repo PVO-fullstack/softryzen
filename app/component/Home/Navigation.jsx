@@ -25,7 +25,7 @@ export const Navigation = () => {
       <div className="mobile:hidden tablet:block z-10">
         <Links />
       </div>
-      {isOpen && <Menu isOpen && close={handleCloseMenu} />}
+      {isOpen && <Menu close={handleCloseMenu} />}
     </>
   );
 };
