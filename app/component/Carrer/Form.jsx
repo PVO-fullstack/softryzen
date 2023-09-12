@@ -4,8 +4,8 @@ export const Form = () => {
   return (
     <div>
       <h1 className="text-justify text-white text-lg font-extralight leading-normal">
-        Don't miss your opportunity! Fill out the form right now and join our
-        team!
+        Don`&#39`t miss your opportunity! Fill out the form right now and join
+        our team!
       </h1>
       <form className="flex flex-row" name="Carrer form">
         <div>
