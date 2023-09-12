@@ -1,0 +1,11 @@
+.bg {
+  background-image: url("/images/bg_carrer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  fill: #0a1813;
+}
+
+.overlay {
+  position: relative;
+  background-color: #020f08bf;
+}

@@ -4,8 +4,8 @@ import { Navigation } from "./Navigation";
 
 export const Header = () => {
   return (
-    <div className=" bg-gradient-to-b from-[#001826] to-[#00253100] bg-bottom-[length:1440_146px] h-[106px] flex items-start justify-between pt-6 pb-6 pl-[104px] pr-[101px]">
-      <div className="inline-flex flex-col flex-start gap-[2px]">
+    <div className="flex justify-between mobile:mx-5 mobile:pt-9 mobile:items-center tablet:mx-8  desktop:h-[106px] desktop:pt-6 desktop:pb-6 desktop:pl-[104px] desktop:pr-[101px] z-10">
+      <div className="inline-flex flex-col flex-start gap-[2px] z-10">
         <Image
           src="/images/Rectangle.png"
           width={61}

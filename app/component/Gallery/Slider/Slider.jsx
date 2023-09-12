@@ -112,7 +112,7 @@ export const Slider = () => {
         ) : null}
         <div className=" w-[313px] h-[225px] absolute top-0 bg-[#020F08BF] shadow-[0px 4px 4px 0px rgba(0, 0, 0, 0.25)] "></div>
       </div>
-      <div className="w-[606px] h-[429px]  z-10 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-row ">
+      <div className="w-[606px] h-[429px]  absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-row ">
         {items.length ? (
           <Image
             className=" w-[606px] h-[429px] bg-[#D9D9D9] "

@@ -1,0 +1,84 @@
+.border {
+  display: grid;
+  align-content: center;
+  width: 280px;
+  height: 53px;
+  padding: 18px 64px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2.67;
+  background: #ffffff1a;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 230px;
+    padding: 14px 64px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 293px;
+    margin-top: 28px;
+    padding: 16px 64px;
+    font-size: 32px;
+  }
+}
+
+.border:hover {
+  background: #ffffff33;
+}
+
+.border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 53px;
+  background-image: url("/images/Group67.svg");
+  color: white;
+
+  @media screen and (min-width: 768px) {
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 50px;
+    background-image: url("/images/Group64.svg");
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 71px;
+    background-image: url("/images/Group62.svg");
+  }
+}
+
+.border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 188px;
+  width: 42px;
+  height: 53px;
+  color: white;
+  background-image: url("/images/Group65.svg");
+
+  @media screen and (min-width: 768px) {
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 50px;
+    background-image: url("/images/Group66.svg");
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: -12px;
+    right: 0;
+    width: 44px;
+    height: 71px;
+    background-image: url("/images/Group63.svg");
+  }
+}

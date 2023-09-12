@@ -9,6 +9,7 @@ import {
   scrollSpy,
   scroller,
 } from "react-scroll";
+import style from "./Join.module.css";
 
 export const Join = () => {
   useEffect(() => {
@@ -30,7 +31,7 @@ export const Join = () => {
   return (
     <>
       <Link
-        className="py-[16px] px-[64px] text-[32px] font-bold  text-white cursor-pointer"
+        className={style.border}
         to="contacts"
         smooth={true}
         duration={1000}

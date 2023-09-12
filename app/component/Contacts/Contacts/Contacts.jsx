@@ -1,16 +1,12 @@
 import React from "react";
-import { ContactsForm } from "./ContactsForm/ContactsForm";
+import { ContactsForm } from "../ContactsForm/ContactsForm";
+import style from "./Contacts.module.css";
 
 export const Contacts = ({ Component, pageProps }) => {
   return (
     <>
-      <div className=" bg-neutral-900">
-        <div
-          id="contacts"
-          className="bg-[url('/images/bg_contacts.jpg')] bg-cover"
-        >
-          {/* <div className="h-[293px] opacity-75 bg-gradient-to-b from-slate-900 to-teal-950" /> */}
-          {/* <div className="bottom-0 h-[293px] opacity-75 bg-gradient-to-b from-slate-900 to-teal-950" /> */}
+      <div id="contacts" className={style.bg}>
+        <div className={style.overlay}>
           <div className="bg-neutral-950 bg-opacity-75">
             <div className="pt-[104px] mx-[80px] px-[24px] flex flex-row ">
               <div>
@@ -58,6 +54,8 @@ export const Contacts = ({ Component, pageProps }) => {
                 </div>
               </div>
             </div>
+            <div className={style.top_overlay}></div>
+            <div className={style.bottom_overlay}></div>
           </div>
         </div>
       </div>

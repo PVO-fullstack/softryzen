@@ -1,0 +1,61 @@
+.bg {
+  background-image: url("/images/bg_mob.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  fill: #d9d9d9;
+
+  @media screen and (min-width: 768px) {
+    background-image: url("/images/bg_tab.jpg");
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url("/images/bg.jpg");
+  }
+}
+
+.overlay {
+  background: #020f0880;
+}
+
+.header_overlay {
+  position: absolute;
+  opacity: 0.75;
+  background: linear-gradient(180deg, #001826 0%, #00253100 100%);
+  width: 100%;
+  height: 287px;
+
+  @media screen and (min-width: 768px) {
+    height: 287px;
+    opacity: 0.75;
+    background: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%);
+  }
+
+  @media screen and (min-width: 1440px) {
+    opacity: 0.5;
+    height: 146px;
+  }
+}
+
+.border {
+  width: 293px;
+  height: 71px;
+  padding: 16px 64px;
+}
+
+.border::before {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 71px;
+  color: white;
+  background-image: url("/images/Group62.svg");
+}
+
+.border::after {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 71px;
+  color: white;
+  background-image: url("/images/Group63.svg");
+}
