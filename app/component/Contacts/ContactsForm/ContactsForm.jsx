@@ -28,7 +28,7 @@ export const ContactsForm = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="flex flex-row gap-[20px] mt-[5px]">
-        <div>
+        <div className="z-10">
           <label className=" w-[294px] block text-white text-xs font-extralight leading-normal tracking-widest">
             Full name
             <input
@@ -36,18 +36,22 @@ export const ContactsForm = () => {
               {...register("fullName")}
             />
           </label>
-          <p>{errors.fullName?.message}</p>
+          <p className="text-rose-500 text-xs font-extralight leading-normal tracking-widest">
+            {errors.fullName?.message}
+          </p>
         </div>
 
-        <div>
+        <div className="z-10">
           <label className=" w-[293px] block text-white text-xs font-extralight leading-normal tracking-widest">
             E-mail
             <input
               className="w-[293px] mt-[6px] h-7 bg-white bg-opacity-5"
-              {...register("eMail")}
+              {...register("email")}
             />
           </label>
-          <p>{errors.eMail?.message}</p>
+          <p className="text-rose-500 text-xs font-extralight leading-normal tracking-widest">
+            {errors.email?.message}
+          </p>
         </div>
       </div>
 
@@ -57,7 +61,7 @@ export const ContactsForm = () => {
       </label>
 
       <button
-        className=" block ml-[auto] mt-[24px] text-center text-white text-[32px] font-medium"
+        className=" z-10 block ml-[auto] mt-[24px] text-center text-white text-[32px] font-medium"
         type="submit"
       >
         Send
