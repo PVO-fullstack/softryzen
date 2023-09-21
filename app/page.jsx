@@ -1,12 +1,29 @@
-import Image from "next/image";
+import "../app/styles/globals.css";
+import { Home } from "./sections/Home/Home";
+import { About } from "./sections/About/About";
+import { Services } from "./sections/Services/Services";
+import { Carrer } from "./sections/Carrer/Carrer";
+import { Gallery } from "./sections/Gallery/Gallery";
+import { Contacts } from "./sections/Contacts/Contacts";
 
-import "./globals.css";
-import { Home } from "./component/Home/Home/Home";
-import { About } from "./component/About/About";
-import { Services } from "./component/Services/Services";
-import { Carrer } from "./component/Carrer/Carrer/Carrer";
-import { Gallery } from "./component/Gallery/Gallery/Gallery";
-import { Contacts } from "./component/Contacts/Contacts/Contacts";
+export const metadata = {
+  title: "UNCOVER CARPATHIAN’S SECRETS",
+  openGraph: {
+    title: "UNCOVER CARPATHIAN’S SECRETS",
+    description: "The mysteries of these mountains",
+    url: "https://softryzen-tau.vercel.app",
+    siteName: "CARPATHIAN’S",
+    images: [
+      {
+        url: "https://softryzen-tau.vercel.app/_next/image?url=%2Fimages%2Fforest.jpg&w=750&q=75",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 export default function page({ Component, pageProps }) {
   return (
