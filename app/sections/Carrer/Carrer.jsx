@@ -4,7 +4,7 @@ import { Form } from "../../component/Form/Form";
 
 export const Carrer = ({ Component, pageProps }) => {
   return (
-    <div className={style.bg}>
+    <section className={style.bg}>
       <div className={style.overlay}>
         <div className="pt-[104px] mx-[80px] px-[24px] flex flex-col">
           <div className="flex flex-row">
@@ -55,6 +55,6 @@ export const Carrer = ({ Component, pageProps }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

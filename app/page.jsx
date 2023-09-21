@@ -27,13 +27,13 @@ export const metadata = {
 
 export default function page({ Component, pageProps }) {
   return (
-    <div>
+    <main>
       <Home />
       <About />
       <Services />
       <Carrer />
       <Gallery />
       <Contacts />
-    </div>
+    </main>
   );
 }

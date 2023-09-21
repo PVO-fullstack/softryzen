@@ -93,7 +93,11 @@
   }
 }
 
-.bg::before {
+.bg::before,
+.bg_climbing::before,
+.bg_balloon::before,
+.bg_diving::before,
+.bg_rafting::before {
   position: absolute;
   top: 0;
   width: 100%;
@@ -111,7 +115,11 @@
   }
 }
 
-.bg::after {
+.bg::after,
+.bg_climbing::after,
+.bg_balloon::after,
+.bg_diving::after,
+.bg_rafting::after {
   position: absolute;
   bottom: 0;
   width: 100%;

@@ -5,7 +5,7 @@ import style from "./Home.module.css";
 
 export const Home = ({ Component, pageProps }) => {
   return (
-    <div className={style.bg}>
+    <section className={style.bg}>
       <div className={style.header_overlay}></div>
       <Header />
       <div className=" relative mx-5 pb-14 grid gap-6 pt-[25px] tablet:mx-8 tablet:pt-[66px] tablet:grid-cols-3 tablet:grid-rows-2 tablet:gap-0 desktop:mx-[80px] desktop:p-[24px] ">
@@ -38,6 +38,6 @@ export const Home = ({ Component, pageProps }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

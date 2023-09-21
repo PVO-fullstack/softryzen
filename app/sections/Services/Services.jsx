@@ -53,7 +53,7 @@ export const Services = ({ Component, pageProps }) => {
   };
 
   return (
-    <div id="services" className={bg}>
+    <section id="services" className={bg}>
       <div className="px-5 py-14 grid columns-1 tablet:px-8 tablet:py-16 tablet:auto-cols-auto tablet:auto-rows-auto desktop:p-[104px] ">
         <div className=" desktop:mb-[18px] tablet:flex tablet:items-center tablet:gap-[170px] tablet:col-span-2 desktop:gap-[162px] desktop:col-span-2">
           <h1 className="text-white text-[40px] font-thin uppercase leading-[56px] tablet:w-[313px] desktop:w-[458px] tablet:text-[67px] desktop:text-[98px] ">
@@ -76,6 +76,6 @@ export const Services = ({ Component, pageProps }) => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
