@@ -12,10 +12,6 @@ export const Services = ({ Component, pageProps }) => {
   const [description, setDescription] = useState(traveling.description);
   const [bg, setBg] = useState(style.bg);
 
-  // const marginCall = `desktop:static desktop:row-start-2 desktop:mt-[${margin}px] tablet:mt-0  z-10 tablet:w-[221px] tablet:row-start-3 tablet:col-start-2 absolute top-1/2 tablet:top-[379px] justify-self-end desktop:w-[293px]`;
-
-  console.log("offer", offer);
-
   useEffect(() => {
     const change = () => {
       if (offer === "traveling") {

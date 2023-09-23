@@ -4,7 +4,7 @@ import style from "./About.module.css";
 export const About = ({ Component, pageProps }) => {
   return (
     <section id="about" className={style.bg}>
-      <div className=" px-5 py-14 grid tablet:px-8 tablet:py-16 tablet:auto-cols-auto tablet:auto-rows-auto desktop:pt-[104px] desktop:mx-[80px] desktop:px-[24px]">
+      <div className=" px-5 py-14 grid tablet:px-8 tablet:py-16 tablet:auto-cols-auto tablet:auto-rows-auto desktop:p-[104px]">
         <div className=" z-10 tablet:col-span-2 desktop:col-span-1 desktop:w-[606px]">
           <h1 className="text-white text-[40px] font-thin uppercase leading-[56px] tablet:text-[67px] desktop:text-[98px]">
             WHO <span className="font-medium">WE ARE</span>

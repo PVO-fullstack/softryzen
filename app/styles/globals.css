@@ -1,8 +1,8 @@
-@import "./reset.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Karantina:wght@300;400&display=swap");
 
 root {
@@ -58,13 +58,13 @@ root {
 
 @layer components {
   .description_carrer {
-    @apply w-[285px] text-[12px] text-white font-extralight leading-[2];
+    @apply desktop:w-[285px] desktop:text-left desktop:leading-normal tablet:w-[225px] text-right text-white text-xs font-extralight leading-tight;
   }
 }
 
 @layer components {
   .advantages {
-    @apply w-[253px] text-[18px] text-right text-white font-normal leading-[1.33];
+    @apply desktop:text-lg desktop:leading-normal tablet:text-base text-right text-white text-sm font-normal leading-tight;
   }
 }
 
