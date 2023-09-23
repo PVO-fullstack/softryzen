@@ -17,6 +17,20 @@
   }
 }
 
+.mob_bg {
+  position: relative;
+  padding: 56px 20px;
+  background-image: linear-gradient(#020f0880, #020f0880),
+    url("/images/bg_carrer_mob.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  fill: #d9d9d9;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .bg::before {
   content: "";
   position: absolute;
