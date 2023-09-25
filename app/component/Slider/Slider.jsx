@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState, createContext } from "react";
 import Image from "next/image";
+import style from "./Slider.module.css";
 
 const images = [
   "/images/forest.jpg",
@@ -16,6 +17,8 @@ export const Slider = () => {
   const [prevSlide, setPrevSlide] = useState(2);
   const [nextSlide, setNextSlide] = useState(1);
   const [touchPosition, setTouchPosition] = useState(null);
+
+  console.log("first", prevSlide, slide, nextSlide);
 
   useEffect(() => {
     setItems(images);
@@ -75,12 +78,34 @@ export const Slider = () => {
     }
   };
 
+  const nextClick = (active) => {
+    if (active === items.length - 1) {
+      setNextSlide(1);
+    } else if (active === items.length - 2) {
+      setNextSlide(0);
+    } else {
+      setNextSlide(active + 2);
+    }
+  };
+
+  const backClick = (active) => {
+    if (active === 0) {
+      setPrevSlide(items.length - 2);
+    } else if (active === items.length - 1) {
+      setPrevSlide(active - 2);
+    } else {
+      setPrevSlide(items.length - 1);
+    }
+  };
+
   const handleBackClick = () => {
     if (slide === 0) {
       setSlide(items.length - 1);
     } else {
       setSlide(slide - 1);
     }
+    backClick(slide);
+    setNextSlide(slide);
   };
 
   const handleNextClick = () => {
@@ -89,6 +114,8 @@ export const Slider = () => {
     } else {
       setSlide(slide + 1);
     }
+    nextClick(slide);
+    setPrevSlide(slide);
   };
 
   useEffect(() => {
@@ -104,18 +131,23 @@ export const Slider = () => {
     <div
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
-      className="flex flex-row justify-center items-center mt-[15px] mb-[214px] gap-[654px] relative"
+      className="tablet:items-center tablet:justify-items-center tablet:auto-cols-auto relative grid gap-y-6 "
     >
-      <div className="w-[313px] h-[224px] bg-[#D9D9D9] relative ">
-        {items.length ? (
-          <Image src={items[prevSlide]} width={366} height={227} alt="photo" />
-        ) : null}
-        <div className=" w-[313px] h-[225px] absolute top-0 bg-[#020F08BF] shadow-[0px 4px 4px 0px rgba(0, 0, 0, 0.25)] "></div>
-      </div>
-      <div className="w-[606px] h-[429px]  absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-row ">
+      <div className={style.overlay}>
         {items.length ? (
           <Image
-            className=" w-[606px] h-[429px] bg-[#D9D9D9] "
+            className=" desktop:w-[313px] desktop:h-[225px] tablet:w-[121px] tablet:h-[87px] w-[280px] h-[187px]"
+            src={items[prevSlide]}
+            width={313}
+            height={225}
+            alt="photo"
+          />
+        ) : null}
+      </div>
+      <div className=" tablet:row-start-1 tablet:w-[415px] tablet:h-[294px] w-[280px] h-[187px] desktop:w-[606px] desktop:h-[429px] flex flex-row ">
+        {items.length ? (
+          <Image
+            className="tablet:w-[415px] tablet:h-[294px] w-[280px] h-[187px] desktop:w-[606px] desktop:h-[429px] bg-[#D9D9D9] "
             src={items[slide]}
             width={669}
             height={447}
@@ -123,22 +155,27 @@ export const Slider = () => {
           />
         ) : null}
       </div>
-      <div className="w-[313px] h-[224px] bg-[#D9D9D9] relative ">
+      <div className={style.overlay}>
         {items.length ? (
-          <Image src={items[nextSlide]} width={366} height={227} alt="photo" />
+          <Image
+            className=" desktop:w-[313px] desktop:h-[225px] tablet:w-[121px] tablet:h-[87px] w-[280px] h-[187px]"
+            src={items[nextSlide]}
+            width={313}
+            height={225}
+            alt="photo"
+          />
         ) : null}
-        <div className=" w-[313px] h-[225px] absolute top-0 bg-[#020F08BF] shadow-[0px 4px 4px 0px rgba(0, 0, 0, 0.25)] "></div>
       </div>
-      <div className="absolute bottom-[-70px] translate-y-[100%] z-10 flex flex-row justify-center gap-[651px] ">
+      <div className=" desktop:gap-[646px] absolute tablet:gap-x-[435px] tablet:bottom-[17px] z-10 flex flex-row justify-center  ">
         <button
           onClick={handleBackClick}
-          className="w-[294px] h-[40] text-white text-[33px] text-right"
+          className="desktop:w-[294px] desktop:text-end  tablet:w-[85px] tablet:h-[40] tablet:block text-right text-white text-[33px] font-thin hidden "
         >
           BACK
         </button>
         <button
           onClick={handleNextClick}
-          className="w-[294px] h-[40] text-white text-[33px] text-left"
+          className="desktop:w-[294px] tablet:w-[85px] tablet:h-[40] desktop:text-left tablet:block text-right text-white text-[33px] font-thin hidden "
         >
           NEXT
         </button>

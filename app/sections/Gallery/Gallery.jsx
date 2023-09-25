@@ -5,14 +5,12 @@ import style from "./Gallery.module.css";
 export const Gallery = ({ Component, pageProps }) => {
   return (
     <section id="gallery" className={style.bg}>
-      <div className="pt-[104px] mx-[80px] px-[24px] flex flex-row justify-center ">
-        <div>
-          <h1 className="title mb-[126px] z-10 ">
-            OUR <span className="font-medium">GALLERY</span>
-          </h1>
-          <div className="relative">
-            <Slider />
-          </div>
+      <div className=" relative px-5 py-14 tablet:px-8 tablet:py-16 desktop:p-[104px]">
+        <h1 className="desktop:text-[98px] text-justify tablet:text-[67px] tablet:text-center  text-white text-[40px] font-thin uppercase leading-[56px] mb-6">
+          OUR <span className="font-medium">GALLERY</span>
+        </h1>
+        <div className="relative desktop:mt-6 tablet:mt-[72px]">
+          <Slider />
         </div>
       </div>
     </section>
