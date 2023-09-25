@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import x from "../../../public/images/x.svg";
 import Image from "next/image";
+import { Notify } from "notiflix/build/notiflix-notify-aio";
 
 const fullNameRegexp = /^[a-zA-Z]+ [a-zA-Z]+$/;
 const emailRegexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -38,6 +39,7 @@ export const Form = () => {
     resolver: yupResolver(schema),
   });
   const onSubmit = (data) => {
+    Notify.success("Form send");
     reset();
   };
 
@@ -151,13 +153,18 @@ export const Form = () => {
           </label>
         </div>
         <div className=" mt-4 flex gap-2 items-start">
-          <input className="" type="checkbox" name="confirm" id="" />
+          <input
+            className="cursor-pointer"
+            type="checkbox"
+            name="confirm"
+            id=""
+          />
           <label className="block text-white text-xs font-extralight leading-snug">
             I confirm my consent to the processing of personal data.
           </label>
         </div>
         <button
-          className="desktop:text-[32px] desktop:mt-6 mt-4 block ml-auto text-center text-white text-3xl font-medium"
+          className=" cursor-pointer desktop:text-[32px] desktop:mt-6 mt-4 block ml-auto text-center text-white text-3xl font-medium"
           type="submit"
         >
           Send

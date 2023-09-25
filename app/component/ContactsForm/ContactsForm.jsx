@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import x from "../../../public/images/x.svg";
 import Image from "next/image";
+import { Notify } from "notiflix/build/notiflix-notify-aio";
 
 const fullNameRegexp = /^[a-zA-Z]+ [a-zA-Z]+$/;
 const emailRegexp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
@@ -32,6 +33,7 @@ export const ContactsForm = () => {
     resolver: yupResolver(schema),
   });
   const onSubmit = (data) => {
+    Notify.success("Form send");
     reset();
   };
 
@@ -94,7 +96,7 @@ export const ContactsForm = () => {
         </label>
       </div>
       <button
-        className="desktop:col-start-1 relative z-10 desktop:text-[32px] desktop:mt-6 tablet:col-start-2 tablet:justify-self-end mt-4 block ml-auto text-center text-white text-3xl font-medium"
+        className=" cursor-pointer desktop:col-start-1 relative z-10 desktop:text-[32px] desktop:mt-6 tablet:col-start-2 tablet:justify-self-end mt-4 block ml-auto text-center text-white text-3xl font-medium"
         type="submit"
       >
         Send

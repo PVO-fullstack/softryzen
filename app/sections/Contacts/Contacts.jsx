@@ -46,7 +46,8 @@ export const Contacts = ({ Component, pageProps }) => {
                   <Link
                     href="https://www.facebook.com/"
                     target="_blank"
-                    className="desktop:text-right desktop:text-lg  text-white text-sm font-normal leading-normal"
+                    rel="noopener noreferrer nofollow"
+                    className={style.link}
                   >
                     facebook
                   </Link>
@@ -55,7 +56,8 @@ export const Contacts = ({ Component, pageProps }) => {
                   <Link
                     href="https://www.instagram.com/"
                     target="_blank"
-                    className="desktop:text-right desktop:text-lg  text-white text-sm font-normal leading-normal"
+                    rel="noopener noreferrer nofollow"
+                    className={style.link}
                   >
                     instagram
                   </Link>
@@ -64,7 +66,8 @@ export const Contacts = ({ Component, pageProps }) => {
                   <Link
                     href="https://www.youtube.com/"
                     target="_blank"
-                    className="desktop:text-right desktop:text-lg  text-white text-sm font-normal leading-normal"
+                    rel="noopener noreferrer nofollow"
+                    className={style.link}
                   >
                     youtube
                   </Link>
@@ -73,7 +76,8 @@ export const Contacts = ({ Component, pageProps }) => {
                   <Link
                     href="https://www.tiktok.com/"
                     target="_blank"
-                    className="desktop:text-right desktop:text-lg  text-white text-sm font-normal leading-normal"
+                    rel="noopener noreferrer nofollow"
+                    className={style.link}
                   >
                     tiktok
                   </Link>

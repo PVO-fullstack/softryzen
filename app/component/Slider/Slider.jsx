@@ -138,7 +138,7 @@ export const Slider = () => {
             src={items[prevSlide]}
             width={313}
             height={225}
-            alt="photo"
+            alt="forest"
           />
         ) : null}
       </div>
@@ -149,7 +149,7 @@ export const Slider = () => {
             src={items[slide]}
             width={669}
             height={447}
-            alt="photo"
+            alt="lake"
           />
         ) : null}
       </div>
@@ -160,20 +160,20 @@ export const Slider = () => {
             src={items[nextSlide]}
             width={313}
             height={225}
-            alt="photo"
+            alt="mountain"
           />
         ) : null}
       </div>
-      <div className=" desktop:gap-[646px] absolute tablet:gap-x-[435px] tablet:bottom-[17px] z-10 flex flex-row justify-center  ">
+      <div className=" desktop:bottom-0 desktop:gap-[646px] absolute tablet:gap-x-[435px] tablet:bottom-[17px] z-10 flex flex-row justify-center  ">
         <button
           onClick={handleBackClick}
-          className="desktop:w-[294px] desktop:text-end  tablet:w-[85px] tablet:h-[40] tablet:block text-right text-white text-[33px] font-thin hidden "
+          className=" cursor-pointer desktop:w-[294px] desktop:text-end  tablet:w-[85px] tablet:h-[40] tablet:block text-right text-white text-[33px] font-thin hidden "
         >
           BACK
         </button>
         <button
           onClick={handleNextClick}
-          className="desktop:w-[294px] tablet:w-[85px] tablet:h-[40] desktop:text-left tablet:block text-right text-white text-[33px] font-thin hidden "
+          className=" cursor-pointer desktop:w-[294px] tablet:w-[85px] tablet:h-[40] desktop:text-left tablet:block text-right text-white text-[33px] font-thin hidden "
         >
           NEXT
         </button>

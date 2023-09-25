@@ -26,6 +26,7 @@
 }
 
 .border:hover {
+  transition: background 0.5s;
   background: #ffffff33;
 }
 

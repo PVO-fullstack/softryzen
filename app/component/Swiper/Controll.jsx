@@ -6,10 +6,10 @@ export const Controll = ({ setOffer }) => {
   const [active, setactive] = useState("0");
 
   const item =
-    "opacity-50 text-white text-xl font-extralight uppercase leading-[17px] tablet:text-[22px] tablet:leading-[18px] desktop:text-[28px] desktop:leading-[24px]";
+    " hover:opacity-100 hover:pl-2 cursor-pointer opacity-50 text-white text-xl font-extralight uppercase leading-[17px] tablet:text-[22px] tablet:leading-[18px] desktop:text-[28px] desktop:leading-[24px]";
 
   const activeItem =
-    " before:content-[''] before:w-1.5 before:h-1.5 before:rotate-45 before:bg-white flex items-center gap-2 text-white text-xl font-medium uppercase leading-[17px] tablet:text-[22px] tablet:leading-[18px] desktop:text-[28px] desktop:leading-[24px]";
+    " before:content-[''] before:w-1.5 before:h-1.5 before:rotate-45 before:bg-white  cursor-pointer flex items-center gap-2 text-white text-xl font-medium uppercase leading-[17px] tablet:text-[22px] tablet:leading-[18px] desktop:text-[28px] desktop:leading-[24px]";
 
   const handleSetTraveling = () => {
     swiper.slideTo(0);
