@@ -52,7 +52,7 @@ export const Form = () => {
       </h1>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className=" desktop:mt-0 tablet:mt-8 mt-6 grid auto-cols-auto auto-rows-auto"
+        className=" desktop:mt-0 tablet:mt-8 mt-6 grid auto-cols-min auto-rows-auto"
         name="Carrer form"
       >
         <div className="grid gap-y-4">

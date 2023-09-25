@@ -5,13 +5,10 @@ import { Form } from "../../component/Form/Form";
 export const Carrer = ({ Component, pageProps }) => {
   return (
     <>
-      <section className={style.bg}>
+      <section id="carrer" className={style.bg}>
         <div className="relative px-5 py-14 grid tablet:px-8 tablet:py-16 tablet:auto-cols-auto tablet:auto-rows-auto tablet:gap-x-5 desktop:p-[104px]">
           <div className="tablet:col-span-2 ">
-            <h1
-              id="carrer"
-              className="desktop:text-[98px] tablet:text-[67px] text-white text-[40px] font-thin uppercase leading-[56px]"
-            >
+            <h1 className="desktop:text-[98px] tablet:text-[67px] text-white text-[40px] font-thin uppercase leading-[56px]">
               CHOOSE <span className="font-medium">US</span>
             </h1>
           </div>
