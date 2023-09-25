@@ -17,7 +17,7 @@
     padding: 14px 64px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     width: 293px;
     margin-top: 28px;
     padding: 16px 64px;
@@ -45,7 +45,7 @@
     background-image: url("/images/Group64.svg");
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     width: 44px;
     height: 71px;
     background-image: url("/images/Group62.svg");
@@ -68,7 +68,7 @@
     background-image: url("/images/Group66.svg");
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     width: 44px;
     height: 71px;
     background-image: url("/images/Group63.svg");

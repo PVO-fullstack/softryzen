@@ -11,7 +11,7 @@
       url("/images/bg_carrer_tab.jpg");
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     background-image: linear-gradient(#020f0880, #020f0880),
       url("/images/bg_carrer.jpg");
   }
@@ -40,7 +40,7 @@
   width: 100%;
   height: 247px;
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     height: 257px;
   }
 }
@@ -54,7 +54,7 @@
   height: 247px;
   background: linear-gradient(0deg, #002426 0%, rgba(0, 37, 49, 0) 100%);
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     height: 257px;
   }
 }

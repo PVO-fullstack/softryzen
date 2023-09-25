@@ -10,7 +10,7 @@
     height: 87px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     width: 313px;
     height: 225px;
   }

@@ -40,7 +40,7 @@
     background: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%);
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     height: 146px;
     opacity: 0.5;
     background: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%);

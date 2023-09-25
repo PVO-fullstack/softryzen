@@ -18,8 +18,6 @@ export const Slider = () => {
   const [nextSlide, setNextSlide] = useState(1);
   const [touchPosition, setTouchPosition] = useState(null);
 
-  console.log("first", prevSlide, slide, nextSlide);
-
   useEffect(() => {
     setItems(images);
   }, []);

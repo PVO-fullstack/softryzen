@@ -32,12 +32,13 @@ export const Form = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
   });
   const onSubmit = (data) => {
-    console.log(data);
+    reset();
   };
 
   return (
@@ -141,7 +142,7 @@ export const Form = () => {
           <label className="block text-white text-xs font-extralight leading-normal tracking-widest">
             Message
             <textarea
-              className="block desktop:w-[292px] desktop:h-[268px] tablet:w-[221px] tablet:h-[228px] mt-1 w-[279px] h-[196px] bg-white bg-opacity-5 resize-none"
+              className="block desktop:w-[292px] desktop:h-[268px] tablet:w-[221px] tablet:h-[228px] mt-1 pl-2 w-[279px] h-[196px] bg-white bg-opacity-5 resize-none"
               name="message"
               id=""
               cols="30"

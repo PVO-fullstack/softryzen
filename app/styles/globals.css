@@ -40,12 +40,6 @@ root {
 }
 
 @layer components {
-  .title {
-    @apply uppercase tracking-widest text-right font-thin text-[37px] tablet:text-[67px] desktop:text-start tablet:tracking-[8.71px] desktop:text-[98px] text-white w-[646px] desktop:tracking-[-3.92px] leading-tight;
-  }
-}
-
-@layer components {
   .description {
     @apply text-[18px] text-white font-extralight leading-[1.33];
   }
