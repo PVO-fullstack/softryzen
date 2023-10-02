@@ -16,12 +16,12 @@ export const Navigation = () => {
 
   return (
     <>
-      <h2
+      <button
         onClick={handleMenuClick}
         className="text-white text-sm font-normal z-30 tracking-wider tablet:hidden"
       >
         {isOpen ? "Close" : "Menu"}
-      </h2>
+      </button>
       <div className="mobile:hidden tablet:block z-10">
         <Links />
       </div>

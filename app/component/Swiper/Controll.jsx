@@ -6,7 +6,7 @@ export const Controll = ({ setOffer }) => {
   const [active, setactive] = useState("0");
 
   const item =
-    " hover:opacity-100 hover:pl-2 cursor-pointer opacity-50 text-white text-xl font-extralight uppercase leading-[17px] tablet:text-[22px] tablet:leading-[18px] desktop:text-[28px] desktop:leading-[24px]";
+    " hover:opacity-100 hover:pl-2 transition cursor-pointer opacity-50 text-white text-xl font-extralight uppercase leading-[17px] tablet:text-[22px] tablet:leading-[18px] desktop:text-[28px] desktop:leading-[24px]";
 
   const activeItem =
     " before:content-[''] before:w-1.5 before:h-1.5 before:rotate-45 before:bg-white  cursor-pointer flex items-center gap-2 text-white text-xl font-medium uppercase leading-[17px] tablet:text-[22px] tablet:leading-[18px] desktop:text-[28px] desktop:leading-[24px]";
@@ -42,7 +42,7 @@ export const Controll = ({ setOffer }) => {
   };
 
   return (
-    <div className=" desktop:right-0 mt-[60px] tablet:absolute tablet:top-0 tablet:right-[31px] tablet:mt-0 desktop:row-start-2 desktop:w-[236px] z-10 flex flex-col gap-4 desktop:gap-6 tablet:w-[190px]  tablet:order-1 ">
+    <div className="  desktop:right-0 mt-[60px] tablet:absolute tablet:top-0 tablet:right-[31px] tablet:mt-0 desktop:row-start-2 desktop:w-[236px] z-10 flex flex-col gap-4 desktop:gap-6 tablet:w-[190px]  tablet:order-1 ">
       <p
         onClick={handleSetTraveling}
         className={active === "0" ? activeItem : item}

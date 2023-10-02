@@ -6,7 +6,7 @@ export const About = ({ Component, pageProps }) => {
     <section id="about" className={style.bg}>
       <div className=" px-5 py-14 grid tablet:px-8 tablet:py-16 tablet:auto-cols-auto tablet:auto-rows-auto desktop:p-[104px]">
         <div className=" z-10 tablet:col-span-2 desktop:col-span-1 desktop:w-[606px]">
-          <h1 className="text-white text-[40px] font-thin uppercase leading-[56px] tablet:text-[67px] desktop:text-[98px]">
+          <h1 className="text-white text-[40px] font-thin uppercase leading-[56px] tablet:text-[67px] tablet:leading-none desktop:text-[98px]">
             WHO <span className="font-medium">WE ARE</span>
           </h1>
         </div>
@@ -26,7 +26,7 @@ export const About = ({ Component, pageProps }) => {
             enriching your spiritual world and creating unforgettable memories.
           </p>
         </div>
-        <div className=" z-10 mt-10 tablet:mt-0 tablet:self-end tablet:justify-self-start w-[180px] justify-self-end tablet:w-[221px] desktop:w-[296px] tablet:col-start-1 desktop:order-4 desktop:col-start-3 ">
+        <div className=" z-10 mt-10 tablet:mt-0 tablet:self-end tablet:justify-self-start w-[180px] justify-self-end tablet:w-[221px] desktop:w-[296px] tablet:col-start-1 desktop:order-4 desktop:col-start-3 desktop:justify-self-end ">
           <p className="text-white text-sm font-normal uppercase leading-tight tablet:text-base desktop:text-lg desktop:leading-normal">
             From vacationers
           </p>
@@ -37,8 +37,8 @@ export const About = ({ Component, pageProps }) => {
             we have a tour for everyone.
           </p>
         </div>
-        <div className=" z-10 tablet:col-span-2 tablet:col-start-2 tablet:self-end desktop:col-start-1 desktop:w-[605px] desktop:m-[72px]">
-          <p className="  mt-10 text-white text-sm font-extralight leading-tight tablet:text-base desktop:text-lg desktop:leading-normal">
+        <div className=" z-10 tablet:col-span-2 tablet:col-start-2 tablet:ml-5 desktop:col-start-1 desktop:w-[605px] desktop:mt-[72px] desktop:ml-0">
+          <p className="  mt-10 text-white text-sm font-extralight leading-tight tablet:text-base desktop:text-lg desktop:leading-normal desktop:mt-0">
             <span className="font-normal">We use methods</span> that are
             time-tested and proven. Our expert guides with in-depth knowledge of
             the Carpathian landscapes lead you safely through the mysteries of

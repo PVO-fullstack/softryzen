@@ -5,15 +5,30 @@
   background-size: cover;
   background-repeat: no-repeat;
   fill: #d9d9d9;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .bg {
     background-image: linear-gradient(#020f0880, #020f0880),
       url("/images/bg_carrer_tab.jpg");
   }
 
-  @media screen and (min-width: 1280px) {
+  .mob_bg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .bg {
     background-image: linear-gradient(#020f0880, #020f0880),
       url("/images/bg_carrer.jpg");
+  }
+  .bg::before {
+    height: 257px;
+  }
+
+  .bg::after {
+    height: 257px;
   }
 }
 
@@ -25,10 +40,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   fill: #d9d9d9;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
 }
 
 .bg::before {
@@ -39,10 +50,6 @@
   background: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%);
   width: 100%;
   height: 247px;
-
-  @media screen and (min-width: 1280px) {
-    height: 257px;
-  }
 }
 
 .bg::after {
@@ -53,8 +60,4 @@
   width: 100%;
   height: 247px;
   background: linear-gradient(0deg, #002426 0%, rgba(0, 37, 49, 0) 100%);
-
-  @media screen and (min-width: 1280px) {
-    height: 257px;
-  }
 }

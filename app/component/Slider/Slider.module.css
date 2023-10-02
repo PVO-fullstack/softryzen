@@ -1,19 +1,23 @@
+@media screen and (min-width: 768px) {
+  .overlay {
+    grid-row-start: 1;
+    width: 121px;
+    height: 87px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .overlay {
+    width: 313px;
+    height: 225px;
+  }
+}
+
 .overlay {
   width: 280px;
   height: 187px;
   position: relative;
   background-color: #d9d9d9;
-
-  @media screen and (min-width: 768px) {
-    grid-row-start: 1;
-    width: 121px;
-    height: 87px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 313px;
-    height: 225px;
-  }
 }
 
 .overlay::after {

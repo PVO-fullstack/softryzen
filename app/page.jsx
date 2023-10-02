@@ -5,6 +5,12 @@ import { Services } from "./sections/Services/Services";
 import { Carrer } from "./sections/Carrer/Carrer";
 import { Gallery } from "./sections/Gallery/Gallery";
 import { Contacts } from "./sections/Contacts/Contacts";
+import { Inter } from "@next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export const metadata = {
   title: "UNCOVER CARPATHIAN’S SECRETS",
@@ -27,7 +33,7 @@ export const metadata = {
 
 export default function page({ Component, pageProps }) {
   return (
-    <main>
+    <main className={`${inter.variable} font-sans`}>
       <Home />
       <About />
       <Services />

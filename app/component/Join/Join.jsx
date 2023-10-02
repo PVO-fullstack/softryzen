@@ -1,14 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link, Events, animateScroll as scroll, scrollSpy } from "react-scroll";
 import style from "./Join.module.css";
 
 export const Join = () => {
@@ -31,6 +23,7 @@ export const Join = () => {
   return (
     <>
       <Link
+        href="/"
         className={style.border}
         to="contacts"
         smooth={true}

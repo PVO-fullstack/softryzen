@@ -4,17 +4,33 @@
   background-size: cover;
   background-repeat: no-repeat;
   fill: #d9d9d9;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .bg {
     background-image: url("/images/bg_tab.jpg");
   }
 
-  @media screen and (min-width: 1280px) {
-    background-image: url("/images/bg.jpg");
+  .bg::before {
+    height: 289px;
+    opacity: 0.75;
+    background: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%);
   }
 }
 
-.bg::before {
+@media screen and (min-width: 1280px) {
+  .bg {
+    background-image: url("/images/bg.jpg");
+  }
+
+  .bg::before {
+    height: 146px;
+    opacity: 0.5;
+    background: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%);
+  }
+}
+
+.bg::after {
   content: "";
   position: absolute;
   top: 0;
@@ -24,25 +40,11 @@
   background: #020f0880;
 }
 
-/* .overlay {
-} */
-
-.header_overlay {
+.bg::before {
+  content: "";
   position: absolute;
   opacity: 0.75;
   background: linear-gradient(180deg, #001826 0%, #00253100 100%);
   width: 100%;
   height: 287px;
-
-  @media screen and (min-width: 768px) {
-    height: 289px;
-    opacity: 0.75;
-    background: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%);
-  }
-
-  @media screen and (min-width: 1280px) {
-    height: 146px;
-    opacity: 0.5;
-    background: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%);
-  }
 }

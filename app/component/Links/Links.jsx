@@ -26,6 +26,7 @@ export const Links = ({ closeMenu }) => {
   return (
     <nav className="mobile:flex-col mobile:justify-center items-center mobile:mt-[170px] mobile:gap-12 tablet:gap-6 flex tablet:flex-row tablet:mt-0 desktop:gap-[56px] z-10">
       <Link
+        href="/"
         onClick={handleCloseManu}
         className="menu_item"
         to="about"
@@ -35,6 +36,7 @@ export const Links = ({ closeMenu }) => {
         About
       </Link>
       <Link
+        href="/"
         onClick={handleCloseManu}
         className="menu_item"
         to="services"
@@ -44,6 +46,7 @@ export const Links = ({ closeMenu }) => {
         Services
       </Link>
       <Link
+        href="/"
         onClick={handleCloseManu}
         className="menu_item"
         to="carrer"
@@ -53,6 +56,7 @@ export const Links = ({ closeMenu }) => {
         Career
       </Link>
       <Link
+        href="/"
         onClick={handleCloseManu}
         className="menu_item"
         to="gallery"
@@ -62,6 +66,7 @@ export const Links = ({ closeMenu }) => {
         Gallery
       </Link>
       <Link
+        href="/"
         onClick={handleCloseManu}
         className="menu_item"
         to="contacts"

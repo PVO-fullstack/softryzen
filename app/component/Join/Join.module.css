@@ -1,7 +1,42 @@
+@media screen and (min-width: 768px) {
+  .border {
+    width: 230px;
+    padding: 14px 64px;
+  }
+  .border::before {
+    width: 35px;
+    height: 50px;
+    background-image: url("/images/Group64.svg");
+  }
+  .border::after {
+    width: 35px;
+    height: 50px;
+    background-image: url("/images/Group66.svg");
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .border {
+    width: 293px;
+    margin-top: 28px;
+    padding: 16px 64px;
+    font-size: 32px;
+  }
+  .border::after {
+    width: 44px;
+    height: 71px;
+    background-image: url("/images/Group63.svg");
+  }
+  .border::before {
+    width: 44px;
+    height: 71px;
+    background-image: url("/images/Group62.svg");
+  }
+}
+
 .border {
   display: grid;
   align-content: center;
-  /* width: 280px; */
   height: 53px;
   padding: 18px 64px;
   color: #fff;
@@ -11,22 +46,10 @@
   line-height: 2.67;
   background: #ffffff1a;
   cursor: pointer;
-
-  @media screen and (min-width: 768px) {
-    width: 230px;
-    padding: 14px 64px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 293px;
-    margin-top: 28px;
-    padding: 16px 64px;
-    font-size: 32px;
-  }
+  transition: all 0.5s;
 }
 
 .border:hover {
-  transition: background 0.5s;
   background: #ffffff33;
 }
 
@@ -39,18 +62,6 @@
   height: 53px;
   background-image: url("/images/Group67.svg");
   color: white;
-
-  @media screen and (min-width: 768px) {
-    width: 35px;
-    height: 50px;
-    background-image: url("/images/Group64.svg");
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 44px;
-    height: 71px;
-    background-image: url("/images/Group62.svg");
-  }
 }
 
 .border::after {
@@ -62,16 +73,4 @@
   height: 53px;
   color: white;
   background-image: url("/images/Group65.svg");
-
-  @media screen and (min-width: 768px) {
-    width: 35px;
-    height: 50px;
-    background-image: url("/images/Group66.svg");
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 44px;
-    height: 71px;
-    background-image: url("/images/Group63.svg");
-  }
 }
