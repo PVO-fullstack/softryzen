@@ -7,9 +7,9 @@ export const Carrer = ({ Component, pageProps }) => {
     <section id="carrer" className={style.bg}>
       <div className="relative px-5 py-14 grid tablet:px-8 tablet:py-16 tablet:auto-cols-auto tablet:auto-rows-auto tablet:gap-x-5 desktop:p-[104px]">
         <div className="tablet:col-span-2 ">
-          <h1 className="desktop:text-[98px] tablet:text-[67px] text-white text-[40px] font-thin uppercase leading-[56px]">
+          <h2 className="desktop:text-[98px] tablet:text-[67px] text-white text-[40px] font-thin uppercase leading-[56px]">
             CHOOSE <span className="font-medium">US</span>
-          </h1>
+          </h2>
         </div>
         <div className="desktop:mb-8 tablet:col-start-3 tablet:mt-0 justify-self-end mt-6">
           <p className="desktop:w-[293px] desktop:text-lg desktop:leading-normal tablet:w-[221px] tablet:text-justify tablet:text-[13px]  tablet:leading-tight w-[179px] text-white text-sm font-extralight leading-5 ">

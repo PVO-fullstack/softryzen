@@ -45,11 +45,11 @@ export const Form = () => {
 
   return (
     <div className=" grid relative z-10 ">
-      <h1 className=" desktop:mb-4 desktop:text-lg tablet:w-[221px] desktop:justify-start tablet:text-justify tablet:justify-self-start w-[165px] text-white text-sm font-extralight leading-tight justify-self-end ">
+      <h2 className=" desktop:mb-4 desktop:text-lg tablet:w-[221px] desktop:justify-start tablet:text-justify tablet:justify-self-start w-[165px] text-white text-sm font-extralight leading-tight justify-self-end ">
         Don&#39;t miss your opportunity!
         <br />
         Fill out the form right now and join our team!
-      </h1>
+      </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className=" desktop:mt-0 tablet:mt-8 mt-6 grid auto-cols-min auto-rows-auto"

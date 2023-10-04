@@ -8,9 +8,9 @@ export const Contacts = ({ Component, pageProps }) => {
     <section id="contacts" className={style.bg}>
       <div className=" relative px-5 py-14 grid tablet:px-8 tablet:py-16 tablet:auto-cols-auto tablet:auto-rows-auto desktop:p-[104px]">
         <div className="desktop:auto-rows-min desktop:grid">
-          <h1 className="desktop:mb-[71px] desktop:text-[98px] tablet:text-[67px] tablet:leading-[66px] text-white text-[40px] font-thin uppercase leading-[56px]">
+          <h2 className="desktop:mb-[71px] desktop:text-[98px] tablet:text-[67px] tablet:leading-[66px] text-white text-[40px] font-thin uppercase leading-[56px]">
             CONTACT <span className="font-medium">US</span>
-          </h1>
+          </h2>
           <div className="desktop:auto-rows-min desktop:ml-[55px] desktop:col-start-1 relative tablet:auto-cols-min tablet:grid tablet:gap-x-[90px] tablet:auto-rows-auto">
             <div className="desktop:mt-0 tablet:justify-start flex gap-5 justify-end items-baseline mt-9">
               <ul className="tablet:w-[222px]">

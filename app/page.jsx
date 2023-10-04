@@ -5,7 +5,7 @@ import { Services } from "./sections/Services/Services";
 import { Carrer } from "./sections/Carrer/Carrer";
 import { Gallery } from "./sections/Gallery/Gallery";
 import { Contacts } from "./sections/Contacts/Contacts";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],

@@ -42,37 +42,52 @@ export const Controll = ({ setOffer }) => {
   };
 
   return (
-    <div className="  desktop:right-0 mt-[60px] tablet:absolute tablet:top-0 tablet:right-[31px] tablet:mt-0 desktop:row-start-2 desktop:w-[236px] z-10 flex flex-col gap-4 desktop:gap-6 tablet:w-[190px]  tablet:order-1 ">
-      <p
-        onClick={handleSetTraveling}
-        className={active === "0" ? activeItem : item}
-      >
-        ATVs Traveling
-      </p>
-      <p
-        onClick={handleSetClimbing}
-        className={active === "1" ? activeItem : item}
-      >
-        Rock climbing
-      </p>
-      <p
-        onClick={handleSetBalloon}
-        className={active === "2" ? activeItem : item}
-      >
-        Hot air ballooning
-      </p>
-      <p
-        onClick={handleSetDiving}
-        className={active === "3" ? activeItem : item}
-      >
-        Skydiving
-      </p>
-      <p
-        onClick={handleSetRafting}
-        className={active === "4" ? activeItem : item}
-      >
-        Rafting
-      </p>
-    </div>
+    <ul className="  desktop:right-[-10px] mt-[60px] tablet:absolute tablet:top-0 tablet:right-[25px] tablet:mt-0 desktop:row-start-2 desktop:w-[250px] z-10 flex flex-col gap-4 desktop:gap-6 tablet:w-[200px]  tablet:order-1 ">
+      <li>
+        <p
+          tabIndex="0"
+          onClick={handleSetTraveling}
+          className={active === "0" ? activeItem : item}
+        >
+          ATVs Traveling
+        </p>
+      </li>
+      <li>
+        <p
+          tabIndex="0"
+          onClick={handleSetClimbing}
+          className={active === "1" ? activeItem : item}
+        >
+          Rock climbing
+        </p>
+      </li>
+      <li>
+        <p
+          tabIndex="0"
+          onClick={handleSetBalloon}
+          className={active === "2" ? activeItem : item}
+        >
+          Hot air ballooning
+        </p>
+      </li>
+      <li>
+        <p
+          tabIndex="0"
+          onClick={handleSetDiving}
+          className={active === "3" ? activeItem : item}
+        >
+          Skydiving
+        </p>
+      </li>
+      <li>
+        <p
+          tabIndex="0"
+          onClick={handleSetRafting}
+          className={active === "4" ? activeItem : item}
+        >
+          Rafting
+        </p>
+      </li>
+    </ul>
   );
 };

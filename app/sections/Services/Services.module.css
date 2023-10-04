@@ -1,53 +1,40 @@
 .bg {
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  fill: #d9d9d9;
+}
+
+.bg.traveling {
   background-image: linear-gradient(#020f0880, #020f0880),
     url("/images/bg_services_mob.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  fill: #d9d9d9;
 }
 
-.bg_climbing {
-  position: relative;
+.bg.climbing {
   background-image: linear-gradient(#020f0880, #020f0880),
     url("/images/bg_climbing_mob.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  fill: #d9d9d9;
 }
 
-.bg_balloon {
-  position: relative;
+.bg.balloon {
   background-image: linear-gradient(#020f0880, #020f0880),
     url("/images/bg_balloon_mob.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  fill: #d9d9d9;
 }
 
-.bg_diving {
-  position: relative;
+.bg.diving {
   background-image: linear-gradient(#020f0880, #020f0880),
     url("/images/bg_diving_mob.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  fill: #d9d9d9;
 }
 
-.bg_rafting {
-  position: relative;
+.bg.rafting {
   background-image: linear-gradient(#020f0880, #020f0880),
     url("/images/bg_rafting_mob.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  fill: #d9d9d9;
 }
 
 .bg::before,
-.bg_climbing::before,
-.bg_balloon::before,
-.bg_diving::before,
-.bg_rafting::before {
+.bg.climbing::before,
+.bg.balloon::before,
+.bg.diving::before,
+.bg.rafting::before {
   position: absolute;
   top: 0;
   width: 100%;
@@ -56,11 +43,7 @@
   background: linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0) 100%);
 }
 
-.bg::after,
-.bg_climbing::after,
-.bg_balloon::after,
-.bg_diving::after,
-.bg_rafting::after {
+.bg::after {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -75,39 +58,31 @@
       url("/images/bg_services_tab.jpg");
   }
 
-  .bg_climbing {
+  .bg.climbing {
     background-image: linear-gradient(#020f0880, #020f0880),
       url("/images/bg_climbing_tab.jpg");
   }
 
-  .bg_balloon {
+  .bg.balloon {
     background-image: linear-gradient(#020f0880, #020f0880),
       url("/images/bg_balloon_tab.jpg");
   }
 
-  .bg_diving {
+  .bg.diving {
     background-image: linear-gradient(#020f0880, #020f0880),
       url("/images/bg_diving_tab.jpg");
   }
 
-  .bg_rafting {
+  .bg.rafting {
     background-image: linear-gradient(#020f0880, #020f0880),
       url("/images/bg_rafting_tab.jpg");
   }
 
-  .bg::before,
-  .bg_climbing::before,
-  .bg_balloon::before,
-  .bg_diving::before,
-  .bg_rafting::before {
+  .bg::before {
     height: 247px;
   }
 
-  .bg::after,
-  .bg_climbing::after,
-  .bg_balloon::after,
-  .bg_diving::after,
-  .bg_rafting::after {
+  .bg::after {
     height: 247px;
   }
 }
@@ -118,40 +93,32 @@
       url("/images/bg_services.jpg");
   }
 
-  .bg_climbing {
+  .bg.climbing {
     background-image: linear-gradient(#020f0880, #020f0880),
       url("/images/bg_climbing.jpg");
   }
 
-  .bg_balloon {
+  .bg.balloon {
     background-image: linear-gradient(#020f0880, #020f0880),
       url("/images/bg_baloon.jpg");
   }
 
-  .bg_diving {
+  .bg.diving {
     background-image: linear-gradient(#020f0880, #020f0880),
       url("/images/bg_diving.jpg");
   }
 
-  .bg_rafting {
+  .bg.rafting {
     background-image: linear-gradient(#020f0880, #020f0880),
       url("/images/bg_rafting.jpg");
   }
 
-  .bg::before,
-  .bg_climbing::before,
-  .bg_balloon::before,
-  .bg_diving::before,
-  .bg_rafting::before {
+  .bg::before {
     opacity: 0.25;
     height: 241px;
   }
 
-  .bg::after,
-  .bg_climbing::after,
-  .bg_balloon::after,
-  .bg_diving::after,
-  .bg_rafting::after {
+  .bg::after {
     opacity: 0.25;
     height: 241px;
   }

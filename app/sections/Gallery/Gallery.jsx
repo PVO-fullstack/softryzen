@@ -6,9 +6,9 @@ export const Gallery = ({ Component, pageProps }) => {
   return (
     <section id="gallery" className={style.bg}>
       <div className=" relative px-5 py-14 tablet:px-8 tablet:py-16 desktop:p-[104px]">
-        <h1 className="desktop:text-[98px] text-justify tablet:text-[67px] tablet:text-center  text-white text-[40px] font-thin uppercase leading-[56px] mb-6">
+        <h2 className="desktop:text-[98px] text-justify tablet:text-[67px] tablet:text-center  text-white text-[40px] font-thin uppercase leading-[56px] mb-6">
           OUR <span className="font-medium">GALLERY</span>
-        </h1>
+        </h2>
         <div className="relative desktop:mt-6 tablet:mt-[72px]">
           <Slider />
         </div>

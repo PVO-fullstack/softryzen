@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Navigation } from "../Navigation/Navigation";
 import Link from "next/link";
-import { Karantina } from "@next/font/google";
+import { Karantina } from "next/font/google";
 
 const katarina = Karantina({
   weight: ["400"],

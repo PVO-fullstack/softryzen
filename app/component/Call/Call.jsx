@@ -2,7 +2,7 @@ import React from "react";
 
 export const Call = (call, description) => {
   let callClass =
-    "desktop:static desktop:row-start-2 tablet:mt-0  z-10 tablet:w-[221px] tablet:row-start-3 tablet:col-start-2 absolute top-[427px] tablet:top-[379px] justify-self-end desktop:w-[293px]";
+    "desktop:static desktop:row-start-2 tablet:mt-0  z-10 tablet:w-[221px] tablet:row-start-3 tablet:col-start-2 absolute bottom-[380px] tablet:top-[379px] justify-self-end desktop:w-[293px]";
   if (call === "traveling") {
     callClass += " desktop:mt-[15px]";
   } else if (call === "climbing") {

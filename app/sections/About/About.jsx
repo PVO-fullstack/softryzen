@@ -6,9 +6,9 @@ export const About = ({ Component, pageProps }) => {
     <section id="about" className={style.bg}>
       <div className=" px-5 py-14 grid tablet:px-8 tablet:py-16 tablet:auto-cols-auto tablet:auto-rows-auto desktop:p-[104px]">
         <div className=" z-10 tablet:col-span-2 desktop:col-span-1 desktop:w-[606px]">
-          <h1 className="text-white text-[40px] font-thin uppercase leading-[56px] tablet:text-[67px] tablet:leading-none desktop:text-[98px]">
+          <h2 className="text-white text-[40px] font-thin uppercase leading-[56px] tablet:text-[67px] tablet:leading-none desktop:text-[98px]">
             WHO <span className="font-medium">WE ARE</span>
-          </h1>
+          </h2>
         </div>
         <div className=" z-10 w-[180px] mt-2 tablet:mt-0 tablet:w-[220px] tablet:row-span-2 desktop:w-[292px] desktop:ml-6">
           <p className="text-white text-sm font-extralight leading-tight tablet:text-base tablet:row-start-1 tablet:row-end-3 desktop:text-lg">
