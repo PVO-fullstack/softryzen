@@ -1,32 +1,31 @@
+.overlay {
+  width: calc(100vw-40px);
+  position: relative;
+  background-color: #d9d9d9;
+}
+
 @media screen and (min-width: 768px) {
   .overlay {
     grid-row-start: 1;
     width: 121px;
     height: 87px;
   }
+
+  .overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 15, 8, 0.75);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .overlay {
-    width: 313px;
-    height: 225px;
+    width: calc(100vw / 4.75);
+    height: calc(100vw / 6.613);
   }
-}
-
-.overlay {
-  width: 280px;
-  height: 187px;
-  position: relative;
-  background-color: #d9d9d9;
-}
-
-.overlay::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(2, 15, 8, 0.75);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }

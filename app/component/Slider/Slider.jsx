@@ -129,12 +129,12 @@ export const Slider = () => {
     <div
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
-      className="tablet:items-center tablet:justify-items-center tablet:auto-cols-auto relative grid gap-y-6 "
+      className="desktop:gap-x-6 tablet:items-center tablet:justify-items-center tablet:auto-cols-auto relative grid gap-y-6 "
     >
       <div className={style.overlay}>
         {items.length ? (
           <Image
-            className=" desktop:w-[313px] desktop:h-[225px] tablet:w-[121px] tablet:h-[87px] w-[280px] h-[187px]"
+            className=" desktop:w-[calc(100vw/4.75)] tablet:w-[121px] w-[calc(100vw-40px)] "
             src={items[prevSlide]}
             width={313}
             height={225}
@@ -142,13 +142,13 @@ export const Slider = () => {
           />
         ) : null}
       </div>
-      <div className=" tablet:row-start-1 tablet:w-[415px] tablet:h-[294px] w-[280px] h-[187px] desktop:w-[606px] desktop:h-[429px] flex flex-row ">
+      <div className=" tablet:row-start-1 tablet:w-[415px] tablet:h-[294px] w-[calc(100vw-40px)] desktop:w-[calc(100vw/2.455)] desktop:h-[429px] flex flex-row ">
         {items.length ? (
           <Image
-            className="tablet:w-[415px] tablet:h-[294px] w-[280px] h-[187px] desktop:w-[606px] desktop:h-[429px] bg-[#D9D9D9] "
+            className="tablet:w-[415px] w-[calc(100vw-40px)] desktop:w-[calc(100vw/2.455)] bg-[#D9D9D9] "
             src={items[slide]}
-            width={669}
-            height={447}
+            width={606}
+            height={429}
             alt="lake"
           />
         ) : null}
@@ -156,7 +156,7 @@ export const Slider = () => {
       <div className={style.overlay}>
         {items.length ? (
           <Image
-            className=" desktop:w-[313px] desktop:h-[225px] tablet:w-[121px] tablet:h-[87px] w-[280px] h-[187px]"
+            className=" desktop:w-[calc(100vw/4.75)]  tablet:w-[121px] w-[calc(100vw-40px)]"
             src={items[nextSlide]}
             width={313}
             height={225}
@@ -164,7 +164,7 @@ export const Slider = () => {
           />
         ) : null}
       </div>
-      <div className=" desktop:bottom-0 desktop:gap-[646px] absolute tablet:gap-x-[435px] tablet:bottom-[17px] z-10 flex flex-row justify-center  ">
+      <div className=" desktop:bottom-0 desktop:gap-[calc(100vw/2.229)] absolute tablet:gap-x-[435px] tablet:bottom-[17px] z-10 flex flex-row justify-center  ">
         <button
           onClick={handleBackClick}
           className=" cursor-pointer desktop:w-[294px] desktop:text-end  tablet:w-[85px] tablet:h-[40] tablet:block text-right text-white text-[33px] font-thin hidden "
